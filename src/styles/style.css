@@ -1,0 +1,56 @@
+#search-result {
+  width: 100%;
+}
+
+#user-informations {
+  display: flex;
+  flex-direction: row;
+}
+
+#user-informations h2 a {
+  font-size: 0.5em;
+  font-style: italic;
+  color: lightslategray;
+  text-decoration: none;
+}
+
+#user-informations h1 {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+}
+
+.error {
+  border-radius: 5px;
+  background-color: rgb(240, 211, 211);
+  border-style: solid;
+  border-width: 1px;
+  border-color: firebrick;
+  color: firebrick;
+  padding: 10px;
+}
+
+.lds-dual-ring {
+  display: none;
+  width: 64px;
+  height: 64px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
